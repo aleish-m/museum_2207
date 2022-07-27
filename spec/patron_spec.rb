@@ -17,4 +17,14 @@ describe Patron do
     it "Patron has a spending money" do
       expect(@patron_1.spending_money).to eq(20)
     end
+
+    it "Patron has interests" do
+      expect(@patron_1.intrests).to eq([])
+    end
+
+    it "Patron can gain interests" do
+      @patron_1.add_interest("Dead Sea Scrolls")
+      @patron_1.add_interest("Gems and Minerals"
+      expect(@patron_1.intrests).to eq(["Dead Sea Scrolls", "Gems and Minerals"])
+    end
 end
