@@ -10,5 +10,12 @@ describe Exhibit do
       expect(@exhibit).to be_an_instance_of(Exhibit)
     end
 
+    it "Exhibit has a name" do
+      expect(@exhibit.name).to eq("Gems and Minerals")
+    end
+
+    it "Exhibit has a cost" do
+      expect(@exhibit.cost).to eq(0)
+    end
 
 end
