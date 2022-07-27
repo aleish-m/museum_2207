@@ -19,12 +19,12 @@ describe Patron do
     end
 
     it "Patron has interests" do
-      expect(@patron_1.intrests).to eq([])
+      expect(@patron_1.interests).to eq([])
     end
 
     it "Patron can gain interests" do
       @patron_1.add_interest("Dead Sea Scrolls")
-      @patron_1.add_interest("Gems and Minerals"
-      expect(@patron_1.intrests).to eq(["Dead Sea Scrolls", "Gems and Minerals"])
+      @patron_1.add_interest("Gems and Minerals")
+      expect(@patron_1.interests).to eq(["Dead Sea Scrolls", "Gems and Minerals"])
     end
 end
